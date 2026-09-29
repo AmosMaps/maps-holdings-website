@@ -15,7 +15,7 @@
    ===================================================================== */
 
 const roomAvailability = {
-  standard1300:     { available: 1 },   // R1,300 - Standard Rooms
+  standard1300:     { available: 0 },   // R1,300 - Standard Rooms
   missingMiddle1600: { available: 0 },  // R1,600 - Missing Middle Rooms
   dropInOcean1750:   { available: 0 },  // R1,750 - A Drop In The Ocean
   bachelor2000:      { available: 0 }   // R2,000 - Bachelor Rooms
