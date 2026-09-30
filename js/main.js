@@ -230,14 +230,14 @@ function applyAvailability() {
     }
   });
 
-  const banner = document.querySelector("[data-availability-banner]");
-  if (banner) {
+  const banners = document.querySelectorAll("[data-availability-banner]");
+  banners.forEach(function (banner) {
     banner.textContent = anyAvailable
       ? "Rooms available now — enquire today!"
-      : "Currently fully booked — join our waiting list.";
+      : "Rooms currently fully booked — join our waiting list.";
     banner.classList.toggle("banner-available", anyAvailable);
     banner.classList.toggle("banner-full", !anyAvailable);
-  }
+  });
 }
 
 function setupMobileNav() {

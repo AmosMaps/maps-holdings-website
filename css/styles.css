@@ -226,6 +226,12 @@ a { color: inherit; }
   color: #f4c9c5;
 }
 
+/* Readable variant for use on light card backgrounds instead of the dark hero */
+.availability-banner--onlight { align-self: flex-start; }
+
+.availability-banner--onlight.banner-available { color: var(--green); }
+.availability-banner--onlight.banner-full { color: var(--red); }
+
 .banner-available::before {
   content: "";
   width: 8px;
